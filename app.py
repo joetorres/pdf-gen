@@ -22,6 +22,7 @@ options = {
 # Controller-1
 @app.route("/", methods=['GET'])
 def get_alive():
+    print("It's alive!");
     return "It's alive"
 
 
@@ -31,7 +32,8 @@ def get_report():
     fileName = "files/" + str(uuid.uuid4()) + ".pdf"
     data = flask.request.data
     body = json.loads(data)
-    url = body["url"]    
+    url = body["url"]        
+    print("Convertendo a url:" + url)
 
     if "orientation" in body:
         options["orientation"] = body["orientation"]    
