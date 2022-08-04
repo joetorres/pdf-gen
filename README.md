@@ -1,3 +1,3 @@
 # pdf-gen
 
-Smap api for genrating pdf from a url.
+Terrible api for genrating pdf from a url.
